@@ -1,9 +1,8 @@
 import CarCard from "@/components/CarCard";
-import CustomFilter from "@/components/CustomFilter";
+
 import Hero from "@/components/Hero";
 import SearchBar from "@/components/SearchBar";
 import { fetchCars } from "@/utils";
-import Image from "next/image";
 
 export default async function Home() {
   const allCars = await fetchCars();
@@ -20,8 +19,8 @@ export default async function Home() {
           <div className="home__filters">
             <SearchBar />
             <div className="home__filter-container">
-              <CustomFilter title="fuel" />
-              <CustomFilter title="year" />
+              {/* <CustomFilter title="fuel" />
+              <CustomFilter title="year" /> */}
             </div>
           </div>
           {!isDataEmpty ? (

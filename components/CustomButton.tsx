@@ -10,7 +10,6 @@ const CustomButton = ({
   btnType,
   textStyle,
   rightIcon,
-  isDisabled,
 }: CustomButtonProps) => {
   return (
     <button
